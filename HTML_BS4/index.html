@@ -88,7 +88,7 @@
 
 			</div>
 
-			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
+
 
 		</div>
 		<!-- /SLIDE TOP -->
@@ -457,7 +457,7 @@
 							</a>
 							<h3 class="mt-10">Our awards</h3>
 							<p>Rocket Elevators has won numerous awards and participated in many major projects.</p>
-							<a href="#" class="btn btn-default">Read more</a>
+							<a href="#awards" class="btn btn-default scrollTo">Read more</a>
 						</div>
 
 						<div class="col-sm-4">
@@ -465,14 +465,14 @@
 							</a>
 							<h3 class="mt-10">Residential services</h3>
 							<p>Rocket Elevators offers residential services.</p>
-							<a href="#" class="btn btn-default">Read more</a>
+							<a href="residential.html" class="btn btn-default">Read more</a>
 						</div>
 
 						<div class="col-sm-4">
 							<img class="img-fluid" src="demo_files/images_rocket/AdobeStock_179073967.jpeg" alt="img" />
 							<h3 class="mt-10">Commercial services</h3>
 							<p>Rocket Elevators offers commercial services.</p>
-							<a href="#" class="btn btn-default">Read more</a>
+							<a href="commercial.html" class="btn btn-default">Read more</a>
 						</div>
 
 					</div>
@@ -515,7 +515,7 @@
 					<div class="text-center">
 						<ul class="nav nav-pills mix-filter mb-60">
 							<li data-filter="all" class="filter active"><a href="#">All</a></li>
-							<li data-filter="award" class="filter"><a href="#">Awards</a></li>
+							<li data-filter="award" class="filter" id="awards"><a href="#">Awards</a></li>
 							<li data-filter="residential" class="filter"><a href="#">Residential</a></li>
 							<li data-filter="commercial" class="filter"><a href="#">Commercial</a></li>
 						</ul>
@@ -1140,7 +1140,6 @@
 
 					<header class="text-center mb-60">
 						<h2>Contact Us</h2>
-						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
 						<hr />
 					</header>
 
@@ -1204,8 +1203,12 @@
 
 									<div class="row">
 											<div class="col-md-4">
-												<label for="contact:name">Full Name *</label>
+												<label for="contact:name">Full name *</label>
 												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:name">Business name</label>
+												<input required type="text" value="" class="form-control" name="contact[business]" id="contact:business">
 											</div>
 											<div class="col-md-4">
 												<label for="contact:email">E-mail Address *</label>
@@ -1215,26 +1218,31 @@
 												<label for="contact:phone">Phone</label>
 												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
 											</div>
+											<div class="col-md-4">
+												<label for="contact:phone">Project Name</label>
+												<input type="text" value="" class="form-control" name="contact[project]" id="contact:project">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:phone">Project Description</label>
+												<input type="text" value="" class="form-control" name="contact[project-desc]" id="contact:project-desc">
+											</div>
+											
 									</div>
 									<div class="row">
 											<div class="col-md-8">
-												<label for="contact:subject">Subject *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
-											</div>
-											<div class="col-md-4">
 												<label for="contact_department">Department</label>
 												<select class="form-control pointer" name="contact[department]">
 													<option value="">--- Select ---</option>
-													<option value="Marketing">Marketing</option>
-													<option value="Webdesign">Webdesign</option>
-													<option value="Architecture">Architecture</option>
+													<option value="Customer Service">Customer Service</option>
+													<option value="Technical Support">Technical Support</option>
+													<option value="Complaint">Complaint</option>
 												</select>
 											</div>
 									</div>
 									<div class="row">
 											<div class="col-md-12">
 												<label for="contact:message">Message *</label>
-												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message][required]" id="contact:message"></textarea>
 											</div>
 									</div>
 									<div class="row">
@@ -1280,14 +1288,16 @@
 								h-550
 								h-600
 							-->
-							<div id="map2" class="h-400 grayscale"></div>
+							<a href="https://www.google.com/maps/place/1165+Bd+Lebourgneuf,+Qu%C3%A9bec,+QC+G2K+2C9/@46.8356637,-71.2940272,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb897e960cb92d3:0xd1f81b6230e26c75!8m2!3d46.8356601!4d-71.2918385">
+                            <img src="demo_files/images_rocket/map.png">
+							</a>
 
 							<hr />
 
 							<p>
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Street Name, City Name, Country</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@yourdomain.com</a></span>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 1165 Bd Lebourgneuf, Quebec, QC G2K 2C9, Canada</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:(418) 555-1234">(418) 555-1234</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="info@codeboxx.biz">info@codeboxx.biz</a></span>
 							</p>
 
 						</div>
@@ -1316,30 +1326,14 @@
 
 							<!-- Small Description -->
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat.
+								We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
 							</p>
-							<h2>(800) 123-4567</h2>
+							<h2>(418) 555-1234</h2>
 						</div>
 						<!-- /col #1 -->
 
 						<!-- col #2 -->
 						<div class="col-md-4">
-							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-
 
 						</div>
 						<!-- /col #2 -->
@@ -1353,10 +1347,9 @@
 					<div class="container">
 						<ul class="float-right m-0 list-inline mobile-block">
 							<li><a href="#">Terms &amp; Conditions</a></li>
-							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
+
 						</ul>
-						&copy; All Rights Reserved, Company LTD
+						&copy; All Rights Reserved, Rocket Elevators LTD
 					</div>
 				</div>
 
@@ -1411,14 +1404,14 @@
 				**/
 				var map2 = new GMaps({
 					div: '#map2',
-					lat: -12.043333,
-					lng: -77.028333,
-					scrollwheel: false
+					lat: 46.8355528,
+					lng: -71.2918118,
+					scrollwheel: true
 				});
 
 				var marker = map2.addMarker({
-					lat: -12.043333,
-					lng: -77.028333,
+					lat: 46.8355528,
+					lng: -71.2918118,
 					title: 'Company, Inc.'
 				});
 
