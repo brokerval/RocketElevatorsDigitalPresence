@@ -203,73 +203,135 @@
 					</span>
 				</a>
 
+				<!--form-->
 				<div class="container">
 				<div class="row">
-					<div class="col-md-8">
-						<form>
+					<div class="col-md-12">
+						<form action="form.html">
 						<label for="building_type">Type of building:</label>
 						<select class="form-control pointer" name="contact[department]">
-							<option value="">--- Select ---</option>
-							<option value="Residential">Residential</option>
-							<option value="Commercial">Commercial</option>
-							<option value="Corporate">Corporate</option>
-							<option value="Hybrid">Hybrid</option>
+							<option value="select">--- Select ---</option>
+							<option value="Residential" id="select-residential">Residential</option>
+							<option value="Commercial" id="select-commercial">Commercial</option>
+							<option value="Corporate" id="select-corporate">Corporate</option>
+							<option value="Hybrid" id="select-hybrid">Hybrid</option>
 						</select>
 					</div>
 
-							<div class="col-md-6">
-						<label for="residential_building" id="residential_building">Number of appartments</label>
-						<input type="number">
+
+					<div class="col-md-4">
+						<div id="n-appartments-res">
+						    <label for="residential">Number of appartments</label>
+						    <input type="number">
+						</div>
+
+							<div id="n-floors-res">
 						<label>Number of floors</label>
-						<input type="number">
-						<label>Number of basement</label>
 						<input type="number">
 							</div>
 
-							<div class="col-md-4">
-							<label for="commercial_building" id="commercial_building">Number of distinct businesses</label>
+							<div id="n-basements-res">
+						<label>Number of basements</label>
+						<input type="number">
+							</div>
+				 </div>
+				 		<div class="col-md-4">
+						<div id="n-business-com">
+							<label for="commercial">Number of distinct businesses</label>
 							<input type="number">
+						</div>
+
+							<div id="n-floors-com">
 							<label>Number of floors, exluding basement</label>
 							<input type="number">
+							</div>
+
+							<div id="n-basements-com">
 							<label>Number of basement in the building</label>
 							<input type="number">
+							</div>
+
+							<div id="n-parkings-com">
 							<label>Number of parking space available</label>
 							<input type="number">
+							</div>
+							<div id="n-elevator-com">
 							<label>Number of elevator cage to be deployed</label>
 							<input type="number">
 							</div>
+						 </div>
 
-							<div class="col-md-4">
-								<label for="corporate_building" id="corporate_building">Number of separate tenant companies</label>
+						 	<div class="col-md-4">
+							<div id="n-companies-cor">
+								<label for="corporate">Number of separate tenant companies</label>
 								<input type="number">
+							</div>
+
+								<div id="n-floors-cor">
 								<label>Number of floors, exluding basement</label>
-								<input type="number">
-								<label>Number of basement in the building</label>
-								<input type="number">
-								<label>Number of parking space available</label>
-								<input type="number">
-								<label>Maximum number of occupants per floor</label>
 								<input type="number">
 								</div>
 
-								<div class="col-md-4">
-									<label for="hybrid_building" id="hybrid_building">Number of distinct businesses</label>
+								<div id="n-basements-cor">
+								<label>Number of basement in the building</label>
+								<input type="number">
+								</div>
+
+								<div id="n-parkings-cor">
+								<label>Number of parking space available</label>
+								<input type="number">
+
+								<div id="n-occupants-cor">
+								<label>Maximum number of occupants per floor</label>
+								<input type="number">
+								</div>
+							</div>
+
+							<div class="col-md-12">
+							<div id="n-business-hyb">
+									<label for="hybrid">Number of distinct businesses</label>
 									<input type="number">
+							</div>
+
+									<div id="n-floors-hyb">
 									<label>Number of floors, exluding basement</label>
 									<input type="number">
+									</div>
+
+									<div id="n-basements-hyb">
 									<label>Number of basement in the building</label>
 									<input type="number">
+									</div>
+
+									<div id="n-parkings-hyb">
 									<label>Number of parking space available</label>
 									<input type="number">
+									</div>
+
+									<div id="n-occupants-hyb">
 									<label>Maximum number of occupants per floor</label>
 									<input type="number">
+									</div>
+
+									<div id="n-activity-hyb">
 									<label>Number of hours of activity of the building (the maximum being 24)</label>
 									<input type="number" max="24">
+									</div>
+							</div>
+
+									<div class="row">
+										<div class="col-md-4">
+											<a href="form.html">
+											<button class="btn btn-primary">SUBMIT</button>
+											</a>
+										</div>
 									</div>
 
 						</form>
 
 				</div>
+
+				<!--/form-->
 
 			</div>
 			
