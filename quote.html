@@ -204,6 +204,7 @@
 				</a>
 
 				<!--form-->
+				<script src="assets/js/quote.js"></script>
 				<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -211,109 +212,108 @@
 						<label for="building_type">Type of building:</label>
 						<select class="form-control pointer" name="contact[department]">
 							<option value="select">--- Select ---</option>
-							<option value="Residential" id="select-residential">Residential</option>
-							<option value="Commercial" id="select-commercial">Commercial</option>
-							<option value="Corporate" id="select-corporate">Corporate</option>
-							<option value="Hybrid" id="select-hybrid">Hybrid</option>
+							<option value="residential" id="select-residential">Residential</option>
+							<option value="commercial" id="select-commercial">Commercial</option>
+							<option value="corporate" id="select-corporate">Corporate</option>
+							<option value="hybrid" id="select-hybrid">Hybrid</option>
 						</select>
 					</div>
 
-
 					<div class="col-md-4">
-						<div id="n-appartments-res">
+						<div id="number-of-apartments">
 						    <label for="residential">Number of appartments</label>
 						    <input type="number">
 						</div>
 
-							<div id="n-floors-res">
+							<div id="number-of-floors">
 						<label>Number of floors</label>
 						<input type="number">
 							</div>
 
-							<div id="n-basements-res">
+							<div id="number-of-basements">
 						<label>Number of basements</label>
 						<input type="number">
 							</div>
 				 </div>
 				 		<div class="col-md-4">
-						<div id="n-business-com">
+						<div id="number-of-companies">
 							<label for="commercial">Number of distinct businesses</label>
 							<input type="number">
 						</div>
 
-							<div id="n-floors-com">
+							<div id="number-of-floors">
 							<label>Number of floors, exluding basement</label>
 							<input type="number">
 							</div>
 
-							<div id="n-basements-com">
+							<div id="number-of-basements">
 							<label>Number of basement in the building</label>
 							<input type="number">
 							</div>
 
-							<div id="n-parkings-com">
+							<div id="number-of-parking-spots">
 							<label>Number of parking space available</label>
 							<input type="number">
 							</div>
-							<div id="n-elevator-com">
+							<div id="number-of-elevators">
 							<label>Number of elevator cage to be deployed</label>
 							<input type="number">
 							</div>
 						 </div>
 
 						 	<div class="col-md-4">
-							<div id="n-companies-cor">
+							<div id="number-of-corporations">
 								<label for="corporate">Number of separate tenant companies</label>
 								<input type="number">
 							</div>
 
-								<div id="n-floors-cor">
+								<div id="number-of-floors">
 								<label>Number of floors, exluding basement</label>
 								<input type="number">
 								</div>
 
-								<div id="n-basements-cor">
+								<div id="number-of-basements">
 								<label>Number of basement in the building</label>
 								<input type="number">
 								</div>
 
-								<div id="n-parkings-cor">
+								<div id="number-of-parking-spots">
 								<label>Number of parking space available</label>
 								<input type="number">
 
-								<div id="n-occupants-cor">
+								<div id="maximum-occupancy">
 								<label>Maximum number of occupants per floor</label>
 								<input type="number">
 								</div>
 							</div>
 
 							<div class="col-md-12">
-							<div id="n-business-hyb">
+							<div id="number-of-companies">
 									<label for="hybrid">Number of distinct businesses</label>
 									<input type="number">
 							</div>
 
-									<div id="n-floors-hyb">
+									<div id="number-of-floors">
 									<label>Number of floors, exluding basement</label>
 									<input type="number">
 									</div>
 
-									<div id="n-basements-hyb">
+									<div id="number-of-basements">
 									<label>Number of basement in the building</label>
 									<input type="number">
 									</div>
 
-									<div id="n-parkings-hyb">
+									<div id="number-of-parking-spots">
 									<label>Number of parking space available</label>
 									<input type="number">
 									</div>
 
-									<div id="n-occupants-hyb">
+									<div id="maximum-occupancy">
 									<label>Maximum number of occupants per floor</label>
 									<input type="number">
 									</div>
 
-									<div id="n-activity-hyb">
+									<div id="business-hours">
 									<label>Number of hours of activity of the building (the maximum being 24)</label>
 									<input type="number" max="24">
 									</div>
