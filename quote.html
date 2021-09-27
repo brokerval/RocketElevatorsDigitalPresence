@@ -205,14 +205,13 @@
 
 				<!--form-->
 
-				<script src="assets/js/quote.js"></script>
 				<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<form action="form.html">
 						<label for="building_type">Type of building:</label>
-						<select class="form-control pointer" name="contact[department]">
-							<option value="select">--- Select ---</option>
+						<select class="col-md-12" name="contact[department]" id="selector">
+							<option value="select" id="select-select">--- Select ---</option>
 							<option value="residential" id="select-residential">Residential</option>
 							<option value="commercial" id="select-commercial">Commercial</option>
 							<option value="corporate" id="select-corporate">Corporate</option>
@@ -220,7 +219,7 @@
 						</select>
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" id="residential-f" hidden>
 						<div id="number-of-apartments">
 						    <label for="residential">Number of appartments</label>
 						    <input type="number">
@@ -236,7 +235,7 @@
 						<input type="number">
 							</div>
 				 </div>
-				 		<div class="col-md-4">
+				 		<div class="col-md-4" id="commercial-f" hidden>
 						<div id="number-of-companies-com">
 							<label for="commercial">Number of distinct businesses</label>
 							<input type="number">
@@ -262,7 +261,7 @@
 							</div>
 						 </div>
 
-						 	<div class="col-md-4">
+						 	<div class="col-md-4" id="corporate-f" hidden>
 							<div id="number-of-corporations">
 								<label for="corporate">Number of separate tenant companies</label>
 								<input type="number">
@@ -288,7 +287,7 @@
 								</div>
 							</div>
 
-							<div class="col-md-12">
+							<div class="col-md-12" id="hybrid-f" hidden>
 							<div id="number-of-companies-hyb">
 									<label for="hybrid">Number of distinct businesses</label>
 									<input type="number">
@@ -444,5 +443,7 @@
 		</script>
 
 		</script>
+		<script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="assets/js/quote.js"></script>
 	</body>
 </html>
