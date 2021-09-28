@@ -27,3 +27,9 @@ function showDiv(value) {
     }
 
 }
+
+    //commercial calcul
+
+
+
+    
