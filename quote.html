@@ -257,7 +257,7 @@
 							</div>
 							<div id="number-of-elevators-com">
 							<label>Number of elevator cage to be deployed</label>
-							<input id="testtt" type="number">
+							<input type="number" onkeyup="calcCom(this.value);">
 							</div>
 						 </div>
 
@@ -340,9 +340,9 @@
 
 				<div id="elevator-amount">
 					<label>Amount of elevators needed</label>
-					<input type="number" disabled="disabled">
+					<input type="number" disabled="disabled" id="elevator-amount-com">
 	            </div>
-				<div id="elevator-amount">
+				<div id="elevator-price">
 					<label>Unit price of each elevator</label>
 					<input type="number" disabled="disabled">
 	            </div>

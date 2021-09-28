@@ -30,6 +30,14 @@ function showDiv(value) {
 
     //commercial calcul
 
+    function calcCom(value){
+        var elevatorsNeeded;
+        elevatorsNeeded = value;
+
+        document.getElementById("elevator-amount-com").value = elevatorsNeeded;
+
+    }
+
 
 
     
