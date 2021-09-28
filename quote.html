@@ -210,7 +210,7 @@
 					<div class="col-md-12">
 						<form action="form.html">
 						<label for="building_type">Type of building:</label>
-						<select class="col-md-12" name="contact[department]" id="selector">
+						<select class="col-md-12" name="contact[department]" id="selector" onchange="showDiv(this.value);">
 							<option value="select" id="select-select">--- Select ---</option>
 							<option value="residential" id="select-residential">Residential</option>
 							<option value="commercial" id="select-commercial">Commercial</option>
@@ -219,7 +219,7 @@
 						</select>
 					</div>
 
-					<div class="col-md-4" id="residential-f" hidden>
+					<div class="col-md-4" id="residential-f" style="display: none;">
 						<div id="number-of-apartments">
 						    <label for="residential">Number of appartments</label>
 						    <input type="number">
@@ -235,7 +235,7 @@
 						<input type="number">
 							</div>
 				 </div>
-				 		<div class="col-md-4" id="commercial-f" hidden>
+				 		<div class="col-md-4" id="commercial-f" style="display: none;">
 						<div id="number-of-companies-com">
 							<label for="commercial">Number of distinct businesses</label>
 							<input type="number">
@@ -261,7 +261,7 @@
 							</div>
 						 </div>
 
-						 	<div class="col-md-4" id="corporate-f" hidden>
+						 	<div class="col-md-4" id="corporate-f" style="display: none;">
 							<div id="number-of-corporations">
 								<label for="corporate">Number of separate tenant companies</label>
 								<input type="number">
@@ -287,7 +287,9 @@
 								</div>
 							</div>
 
-							<div class="col-md-12" id="hybrid-f" hidden>
+
+							</div>
+							<div class="col-md-12" id="hybrid-f" style="display: none;">
 							<div id="number-of-companies-hyb">
 									<label for="hybrid">Number of distinct businesses</label>
 									<input type="number">
@@ -319,23 +321,20 @@
 									</div>
 							</div>
 
-									<div class="row">
-										<div class="col-md-4">
-											<a href="form.html">
-											<button class="btn btn-primary">SUBMIT</button>
-											</a>
-										</div>
-									</div>
-
 						</form>
 
 				</div>
 
-				<!--/form-->
+				
 
 			</div>
-			
-
+				</div>
+            <!--/form-->
+					<div class="text-center">
+					<a href="form.html">
+					<button class="btn btn-primary">SEND MESSAGE</button>
+					</a>
+					</div>
 
 			<!-- FOOTER -->
 			<footer id="footer">
