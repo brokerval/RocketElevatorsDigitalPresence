@@ -222,12 +222,12 @@
 					<div class="col-md-4" id="residential-f" style="display: none;">
 						<div id="number-of-apartments">
 						    <label for="residential">Number of appartments</label>
-						    <input type="number">
+						    <input type="number" id="n-apartments-res" onkeyup="calcRes(this.value);">
 						</div>
 
 							<div id="number-of-floors-res">
 						<label>Number of floors</label>
-						<input type="number">
+						<input type="number" id="n-floors-res" onkeyup="calcRes(this.value);">
 							</div>
 
 							<div id="number-of-basements-res">
@@ -340,7 +340,7 @@
 
 				<div id="elevator-amount">
 					<label>Amount of elevators needed</label>
-					<input type="number" disabled="disabled" id="elevator-amount-com">
+					<input type="number" disabled="disabled" id="elevator-amount-f">
 	            </div>
 				<div id="elevator-price">
 					<label>Unit price of each elevator</label>

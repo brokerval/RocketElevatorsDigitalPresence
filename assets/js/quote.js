@@ -34,10 +34,27 @@ function showDiv(value) {
         var elevatorsNeeded;
         elevatorsNeeded = value;
 
-        document.getElementById("elevator-amount-com").value = elevatorsNeeded;
+        document.getElementById("elevator-amount-f").value = elevatorsNeeded;
 
     }
 
+    //residential calcul
+
+    function  calcRes() {
+
+
+        var numberApartmentsRes = document.getElementById("n-apartments-res").value;
+        console.log(numberApartmentsRes, "nombre de apts res");
+        var numberFloorsRes = document.getElementById("n-floors-res").value;
+        console.log(numberFloorsRes, "numberFloorsRes");
+        var elevatorsNeededRes = document.getElementById("elevator-amount-f")
+        console.log(elevatorsNeededRes, "nombre de elevator");
+
+        // numberApartmentsRes = 
+        // numberFloorsRes = value;
+        // elevatorsNeededRes = numberApartmentsRes / numberFloorsRes;
+            
+    }
 
 
     
