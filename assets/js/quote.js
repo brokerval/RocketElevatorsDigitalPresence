@@ -49,9 +49,7 @@ function showDiv(value) {
         var numberFloorsRes = document.getElementById("n-floors-res").value;
         console.log(numberFloorsRes, "nombre de floors res");
 
-        // var elevatorsNeededRes = document.getElementById("elevator-amount-f").value = (numberApartmentsRes / numberFloorsRes) / 6;
         var elevatorsNeededRes = document.getElementById("elevator-amount-f").value = Math.ceil((numberApartmentsRes / numberFloorsRes) / 6);
-        // elevatorsNeededRes = Math.ceil((numberApartmentsRes / numberFloorsRes) / 6);
         console.log(elevatorsNeededRes);
 
         var columnRes = Math.ceil(numberFloorsRes / 20);
