@@ -49,17 +49,14 @@ function showDiv(value) {
         var numberFloorsRes = document.getElementById("n-floors-res").value;
         console.log(numberFloorsRes, "nombre de floors res");
 
-        var elevatorsNeededRes = document.getElementById("elevator-amount-f").value = numberApartmentsRes / numberFloorsRes;
-        
-        var columnRes = numberFloorsRes / 20;
-        console.log(columnRes, "nombre de columns res");
+        var elevatorsNeededRes = document.getElementById("elevator-amount-f").value = Math.ceil(numberApartmentsRes / numberFloorsRes);
+        console.log(Math.ceil(elevatorsNeededRes));
 
-        if(columnRes + 1) {
-            elevatorsNeededRes * 2;
-        }
+        var columnRes = Math.ceil(numberFloorsRes / 20);
+        console.log(columnRes, "nombre de columns res");
     }
 
-    //arrondir elevatorNeededRes, elevatorneededres *2 chaque fois qu'il y a une column
+    //elevatorneededres *2 chaque fois qu'il y a une column
 
     //corporate hybrid calcul
 
@@ -78,9 +75,6 @@ function showDiv(value) {
 
         var elevatorsNeededCor = document.getElementById("elevator-amount-f").value = maxOccupancyCor / 1000;
         console.log(elevatorsNeededCor, "nombre elevator needed");
-
-        
-
     }
 
     // number of occupants X number of floors, basements to obtain total number of occupants OK
