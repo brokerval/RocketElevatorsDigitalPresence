@@ -49,11 +49,14 @@ function showDiv(value) {
         var numberFloorsRes = document.getElementById("n-floors-res").value;
         console.log(numberFloorsRes, "nombre de floors res");
 
-        var elevatorsNeededRes = document.getElementById("elevator-amount-f").value = Math.ceil(numberApartmentsRes / numberFloorsRes);
-        console.log(Math.ceil(elevatorsNeededRes));
+        // var elevatorsNeededRes = document.getElementById("elevator-amount-f").value = (numberApartmentsRes / numberFloorsRes) / 6;
+        var elevatorsNeededRes = document.getElementById("elevator-amount-f").value = Math.ceil((numberApartmentsRes / numberFloorsRes) / 6);
+        // elevatorsNeededRes = Math.ceil((numberApartmentsRes / numberFloorsRes) / 6);
+        console.log(elevatorsNeededRes);
 
         var columnRes = Math.ceil(numberFloorsRes / 20);
         console.log(columnRes, "nombre de columns res");
+
     }
 
     //elevatorneededres *2 chaque fois qu'il y a une column
@@ -73,7 +76,7 @@ function showDiv(value) {
 
         maxOccupancyCor * numberFloorsCor, numberBasementCor;
 
-        var elevatorsNeededCor = document.getElementById("elevator-amount-f").value = maxOccupancyCor / 1000;
+        var elevatorsNeededCor = document.getElementById("elevator-amount-f").value = Math.ceil(maxOccupancyCor / 1000);
         console.log(elevatorsNeededCor, "nombre elevator needed");
     }
 
