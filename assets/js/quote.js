@@ -59,6 +59,8 @@ function showDiv(value) {
         }
     }
 
+    //arrondir elevatorNeededRes, elevatorneededres *2 chaque fois qu'il y a une column
+
     //corporate hybrid calcul
 
     function calcCorHyb() {
