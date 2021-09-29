@@ -43,18 +43,56 @@ function showDiv(value) {
     function  calcRes() {
 
 
-        var numberApartmentsRes = document.getElementById("n-apartments-res").value;
+        var numberApartmentsRes = document.getElementById("n-apartments-res").value; 
         console.log(numberApartmentsRes, "nombre de apts res");
-        var numberFloorsRes = document.getElementById("n-floors-res").value;
-        console.log(numberFloorsRes, "numberFloorsRes");
-        var elevatorsNeededRes = document.getElementById("elevator-amount-f")
-        console.log(elevatorsNeededRes, "nombre de elevator");
 
-        // numberApartmentsRes = 
-        // numberFloorsRes = value;
-        // elevatorsNeededRes = numberApartmentsRes / numberFloorsRes;
-            
+        var numberFloorsRes = document.getElementById("n-floors-res").value;
+        console.log(numberFloorsRes, "nombre de floors res");
+
+        var elevatorsNeededRes = document.getElementById("elevator-amount-f").value = numberApartmentsRes / numberFloorsRes;
+        
+        var columnRes = numberFloorsRes / 20;
+        console.log(columnRes, "nombre de columns res");
+
+        if(columnRes + 1) {
+            elevatorsNeededRes * 2;
+        }
     }
+
+    //corporate hybrid calcul
+
+    function calcCorHyb() {
+
+        var numberFloorsCor = document.getElementById("n-floors-cor").value;
+        console.log(numberFloorsCor, "nombre de floors cor");
+
+        var numberBasementCor = document.getElementById("n-basement-cor").value;
+        console.log(numberBasementCor, "nombre basement cor");
+
+        var maxOccupancyCor = document.getElementById("max-occupancy-cor").value;
+        console.log(maxOccupancyCor, "max occupancy cor");
+
+        maxOccupancyCor * numberFloorsCor, numberBasementCor;
+
+        var elevatorsNeededCor = document.getElementById("elevator-amount-f").value = maxOccupancyCor / 1000;
+        console.log(elevatorsNeededCor, "nombre elevator needed");
+
+        
+
+    }
+
+    // number of occupants X number of floors, basements to obtain total number of occupants OK
+
+    // total number occupants / 1000 = elevators required OK
+
+    // floors, basement / 20 = columns
+
+    // number of elevators / columns = elevator per column
+
+    // total elevator = elevators per column * number of culomns 
+
 
 
     
+
+

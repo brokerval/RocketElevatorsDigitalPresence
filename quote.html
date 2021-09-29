@@ -226,8 +226,8 @@
 						</div>
 
 							<div id="number-of-floors-res">
-						<label>Number of floors</label>
-						<input type="number" id="n-floors-res" onkeyup="calcRes(this.value);">
+						     <label>Number of floors</label>
+						     <input type="number" id="n-floors-res" onkeyup="calcRes(this.value);">
 							</div>
 
 							<div id="number-of-basements-res">
@@ -269,12 +269,12 @@
 
 								<div id="number-of-floors-cor">
 								<label>Number of floors, exluding basement</label>
-								<input type="number">
+								<input type="number" onkeyup="calcCorHyb(this.value);" id="n-floors-cor">
 								</div>
 
 								<div id="number-of-basements-cor">
 								<label>Number of basement in the building</label>
-								<input type="number">
+								<input type="number" onkeyup="calcCorHyb(this.value);" id="n-basement-cor">
 								</div>
 
 								<div id="number-of-parking-spots-cor">
@@ -283,7 +283,7 @@
 
 								<div id="maximum-occupancy-cor">
 								<label>Maximum number of occupants per floor</label>
-								<input type="number">
+								<input type="number" onkeyup="calcCorHyb(this.value);" id="max-occupancy-cor">
 								</div>
 							</div>
 
@@ -295,14 +295,14 @@
 									<input type="number">
 							</div>
 
-									<div id="number-of-floors-cor">
+									<div id="number-of-floors-hyb">
 									<label>Number of floors, exluding basement</label>
-									<input type="number">
+									<input type="number" onkeyup="calcCorHyb(this.value);" id="n-floors-hyb">
 									</div>
 
 									<div id="number-of-basements-hyb">
 									<label>Number of basement in the building</label>
-									<input type="number">
+									<input type="number" onkeyup="calcCorHyb(this.value);" id="n-basement-hyb">
 									</div>
 
 									<div id="number-of-parking-spots-hyb">
@@ -312,7 +312,7 @@
 
 									<div id="maximum-occupancy-hyb">
 									<label>Maximum number of occupants per floor</label>
-									<input type="number">
+									<input type="number" onkeyup="calcCorHyb(this.value);" id="n-max-occupancy-hyb">
 									</div>
 
 									<div id="business-hours">
