@@ -139,7 +139,7 @@
 
 						<!-- Logo -->
 						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets/images_rocket/R2.png" alt="" />
+							<img src="assets/images/R2.png" alt="" />
 						</a>
 
 						<!-- 
@@ -217,6 +217,7 @@
 							<option value="corporate" id="select-corporate">Corporate</option>
 							<option value="hybrid" id="select-hybrid">Hybrid</option>
 						</select>
+						</form>
 					</div>
 
 					<div class="col-md-4" id="residential-f" style="display: none;">
@@ -269,12 +270,12 @@
 
 								<div id="number-of-floors-cor">
 								<label>Number of floors, exluding basement</label>
-								<input type="number" onkeyup="calcCorHyb(this.value);" id="n-floors-cor">
+								<input type="number" onkeyup="calcCor(this.value);" id="n-floors-cor">
 								</div>
 
 								<div id="number-of-basements-cor">
 								<label>Number of basement in the building</label>
-								<input type="number" onkeyup="calcCorHyb(this.value);" id="n-basement-cor">
+								<input type="number" onkeyup="calcCor(this.value);" id="n-basement-cor">
 								</div>
 
 								<div id="number-of-parking-spots-cor">
@@ -283,7 +284,7 @@
 
 								<div id="maximum-occupancy-cor">
 								<label>Maximum number of occupants per floor</label>
-								<input type="number" onkeyup="calcCorHyb(this.value);" id="max-occupancy-cor">
+								<input type="number" onkeyup="calcCor(this.value);" id="max-occupancy-cor">
 								</div>
 							</div>
 
@@ -297,12 +298,12 @@
 
 									<div id="number-of-floors-hyb">
 									<label>Number of floors, exluding basement</label>
-									<input type="number" onkeyup="calcCorHyb(this.value);" id="n-floors-hyb">
+									<input type="number" onkeyup="calcHyb(this.value);" id="n-floors-hyb">
 									</div>
 
 									<div id="number-of-basements-hyb">
 									<label>Number of basement in the building</label>
-									<input type="number" onkeyup="calcCorHyb(this.value);" id="n-basement-hyb">
+									<input type="number" onkeyup="calcHyb(this.value);" id="n-basement-hyb">
 									</div>
 
 									<div id="number-of-parking-spots-hyb">
@@ -312,7 +313,7 @@
 
 									<div id="maximum-occupancy-hyb">
 									<label>Maximum number of occupants per floor</label>
-									<input type="number" onkeyup="calcCorHyb(this.value);" id="n-max-occupancy-hyb">
+									<input type="number" onkeyup="calcHyb(this.value);" id="n-max-occupancy-hyb">
 									</div>
 
 									<div id="business-hours">
@@ -324,19 +325,17 @@
 						</form>
 
 				</div>
+
 				<form>
-				 <div class="row col">
 					<input type="radio" id="standard" name="radio">
 					<label for="standard">Standard</label>
 					<input type="radio" id="premium" name="radio">
 					<label for="premium">Premium</label>
 					<input type="radio" id="excelium" name="radio">
 					<label for="excelium">Excelium</label>
-				 </div>
-				</form>	
+				</form>
 
-
-				<form>
+				<form >
 
 				<div id="elevator-amount">
 					<label>Amount of elevators needed</label>
@@ -344,32 +343,33 @@
 	            </div>
 				<div id="elevator-price">
 					<label>Unit price of each elevator</label>
-					<input type="number" disabled="disabled">
+					<input type="number" disabled="disabled" id="unit-ele-price">
 	            </div>
 				<div id="elevator-total-price">
 					<label>Total price of the elevators</label>
-					<input type="number" disabled="disabled">
+					<input type="number" disabled="disabled" id="total-ele-price">
 	            </div>
 				<div id="installation-fees">
 					<label>Installation fees</label>
-					<input type="number" disabled="disabled">
+					<input type="number" disabled="disabled" id="install-fees">
 	            </div>
 				<div id="final-price">
 					<label>Final price</label>
-					<input type="number" disabled="disabled">
+					<input type="number" disabled="disabled" id="total-price">
 	            </div>
 
-				</form>
+				</form>	
 			   
 
 			</div>
-				</div>
             <!--/form-->
+			<form>
 					<div class="text-center">
 					<a href="form.html">
 					<button class="btn btn-primary">SEND MESSAGE</button>
 					</a>
 					</div>
+			</form>
 
 			<!-- FOOTER -->
 			<footer id="footer">
