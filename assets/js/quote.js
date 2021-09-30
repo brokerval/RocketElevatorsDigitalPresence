@@ -35,7 +35,7 @@ function showDiv(value) {
         elevatorsNeeded = value;
 
         document.getElementById("elevator-amount-f").value = elevatorsNeeded;
-
+        console.log(elevatorsNeeded, "ele needed com");
     }
 
     //residential calcul manque à faire x2 elevatorneededres chaque fois qu'il y a un column+1
