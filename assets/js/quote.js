@@ -30,18 +30,14 @@ function showDiv(value) {
 
     //commercial calcul works
 
-    function calcCom(value){
-        var elevatorsNeeded;
-        elevatorsNeeded = value;
-
+    function calcCom(elevatorsNeeded){
+        console.log(elevatorsNeeded, "= elevators needed param value")
         document.getElementById("elevator-amount-f").value = elevatorsNeeded;
-        console.log(elevatorsNeeded, "ele needed com");
     }
 
-    //residential calcul manque à faire x2 elevatorneededres chaque fois qu'il y a un column+1
+    //residential *works*
 
     function  calcRes() {
-
 
         var numberApartmentsRes = document.getElementById("n-apartments-res").value; 
         console.log(numberApartmentsRes, "nombre de apts res");
@@ -54,7 +50,9 @@ function showDiv(value) {
 
         var columnRes;
         columnRes = Math.ceil(numberFloorsRes / 20);
-        console.log(columnRes, 'nombre de column res');
+        console.log(columnRes, 'nombre de columns res');
+
+
     }
 
     //calcul corporate *works*
@@ -125,15 +123,26 @@ function showDiv(value) {
 
     }
 
-    // number of occupants X number of floors, basements to obtain total number of occupants OK
+    function handleClick() {
+        var radioValue;
+        if (document.getElementById('standard').checked) {
+            radioValue = 7565;
+        } else if(document.getElementById('premium').checked) {
+            radioValue = 12345;
+        } else if(document.getElementById('excelium').checked) {
+            radioValue = 15400;
+        } else {
+            radioValue = "ça pas marché";
+        }
+        console.log(radioValue, "radioValue")
+        document.getElementById("unit-ele-price").value = radioValue;
+        document.getElementById("total-ele-price").value = radioValue * elevatorAmount;
 
-    // total number occupants / 1000 = elevators required OK
+        var elevatorAmount;
+        document.getElementById("elevator-amount-f").value = elevatorAmount;
 
-    // floors, basement / 20 = columns
+    }
 
-    // number of elevators / columns = elevator per column
-
-    // total elevator = elevators per column * number of culomns 
 
 
 
